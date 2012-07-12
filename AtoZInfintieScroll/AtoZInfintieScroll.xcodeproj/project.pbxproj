@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BBD976815AF2AD500943FC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBD976715AF2AD500943FC1 /* Cocoa.framework */; };
+		7BBD977215AF2AD500943FC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD977015AF2AD500943FC1 /* InfoPlist.strings */; };
+		7BBD977615AF2AD500943FC1 /* AtoZInfintieScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD977515AF2AD500943FC1 /* AtoZInfintieScroll.m */; };
+		7BBD978B15AF2B3000943FC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBD976715AF2AD500943FC1 /* Cocoa.framework */; };
+		7BBD979115AF2B3000943FC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD978F15AF2B3000943FC1 /* InfoPlist.strings */; };
+		7BBD979315AF2B3000943FC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD979215AF2B3000943FC1 /* main.m */; };
+		7BBD979715AF2B3000943FC1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD979515AF2B3000943FC1 /* Credits.rtf */; };
+		7BBD979A15AF2B3000943FC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD979915AF2B3000943FC1 /* AppDelegate.m */; };
+		7BBD979D15AF2B3100943FC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD979B15AF2B3100943FC1 /* MainMenu.xib */; };
+		7BBD97A615AF2BE500943FC1 /* AZSimpleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BBD97A415AF2BE400943FC1 /* AZSimpleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBD97A715AF2BE500943FC1 /* AZSimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD97A515AF2BE400943FC1 /* AZSimpleView.m */; };
+		7BBD980815AF413D00943FC1 /* AtoZInfintieScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BBD977415AF2AD500943FC1 /* AtoZInfintieScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BBD976415AF2AD500943FC1 /* AtoZInfintieScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtoZInfintieScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBD976715AF2AD500943FC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7BBD976A15AF2AD500943FC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7BBD976B15AF2AD500943FC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7BBD976C15AF2AD500943FC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BBD976F15AF2AD500943FC1 /* AtoZInfintieScroll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtoZInfintieScroll-Info.plist"; sourceTree = "<group>"; };
+		7BBD977115AF2AD500943FC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BBD977315AF2AD500943FC1 /* AtoZInfintieScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtoZInfintieScroll-Prefix.pch"; sourceTree = "<group>"; };
+		7BBD977415AF2AD500943FC1 /* AtoZInfintieScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtoZInfintieScroll.h; sourceTree = "<group>"; };
+		7BBD977515AF2AD500943FC1 /* AtoZInfintieScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtoZInfintieScroll.m; sourceTree = "<group>"; };
+		7BBD978915AF2B3000943FC1 /* AtoZInfiniteScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtoZInfiniteScrollDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBD978E15AF2B3000943FC1 /* AtoZInfiniteScrollDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtoZInfiniteScrollDemo-Info.plist"; sourceTree = "<group>"; };
+		7BBD979015AF2B3000943FC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BBD979215AF2B3000943FC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BBD979415AF2B3000943FC1 /* AtoZInfiniteScrollDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtoZInfiniteScrollDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7BBD979615AF2B3000943FC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7BBD979815AF2B3000943FC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BBD979915AF2B3000943FC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BBD979C15AF2B3100943FC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7BBD97A415AF2BE400943FC1 /* AZSimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZSimpleView.h; sourceTree = "<group>"; };
+		7BBD97A515AF2BE400943FC1 /* AZSimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZSimpleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BBD976015AF2AD500943FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD976815AF2AD500943FC1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBD978615AF2B3000943FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD978B15AF2B3000943FC1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BBD975815AF2AD500943FC1 = {
+			isa = PBXGroup;
+			children = (
+				7BBD976D15AF2AD500943FC1 /* AtoZInfintieScroll */,
+				7BBD978C15AF2B3000943FC1 /* AtoZInfiniteScrollDemo */,
+				7BBD976615AF2AD500943FC1 /* Frameworks */,
+				7BBD976515AF2AD500943FC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BBD976515AF2AD500943FC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD976415AF2AD500943FC1 /* AtoZInfintieScroll.framework */,
+				7BBD978915AF2B3000943FC1 /* AtoZInfiniteScrollDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BBD976615AF2AD500943FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD976715AF2AD500943FC1 /* Cocoa.framework */,
+				7BBD976915AF2AD500943FC1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BBD976915AF2AD500943FC1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD976A15AF2AD500943FC1 /* AppKit.framework */,
+				7BBD976B15AF2AD500943FC1 /* CoreData.framework */,
+				7BBD976C15AF2AD500943FC1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7BBD976D15AF2AD500943FC1 /* AtoZInfintieScroll */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD97A415AF2BE400943FC1 /* AZSimpleView.h */,
+				7BBD97A515AF2BE400943FC1 /* AZSimpleView.m */,
+				7BBD977415AF2AD500943FC1 /* AtoZInfintieScroll.h */,
+				7BBD977515AF2AD500943FC1 /* AtoZInfintieScroll.m */,
+				7BBD976E15AF2AD500943FC1 /* Supporting Files */,
+			);
+			path = AtoZInfintieScroll;
+			sourceTree = "<group>";
+		};
+		7BBD976E15AF2AD500943FC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD976F15AF2AD500943FC1 /* AtoZInfintieScroll-Info.plist */,
+				7BBD977015AF2AD500943FC1 /* InfoPlist.strings */,
+				7BBD977315AF2AD500943FC1 /* AtoZInfintieScroll-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BBD978C15AF2B3000943FC1 /* AtoZInfiniteScrollDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD979815AF2B3000943FC1 /* AppDelegate.h */,
+				7BBD979915AF2B3000943FC1 /* AppDelegate.m */,
+				7BBD979B15AF2B3100943FC1 /* MainMenu.xib */,
+				7BBD978D15AF2B3000943FC1 /* Supporting Files */,
+			);
+			path = AtoZInfiniteScrollDemo;
+			sourceTree = "<group>";
+		};
+		7BBD978D15AF2B3000943FC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BBD978E15AF2B3000943FC1 /* AtoZInfiniteScrollDemo-Info.plist */,
+				7BBD978F15AF2B3000943FC1 /* InfoPlist.strings */,
+				7BBD979215AF2B3000943FC1 /* main.m */,
+				7BBD979415AF2B3000943FC1 /* AtoZInfiniteScrollDemo-Prefix.pch */,
+				7BBD979515AF2B3000943FC1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7BBD976115AF2AD500943FC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD97A615AF2BE500943FC1 /* AZSimpleView.h in Headers */,
+				7BBD980815AF413D00943FC1 /* AtoZInfintieScroll.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BBD976315AF2AD500943FC1 /* AtoZInfintieScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BBD977915AF2AD500943FC1 /* Build configuration list for PBXNativeTarget "AtoZInfintieScroll" */;
+			buildPhases = (
+				7BBD975F15AF2AD500943FC1 /* Sources */,
+				7BBD976015AF2AD500943FC1 /* Frameworks */,
+				7BBD976115AF2AD500943FC1 /* Headers */,
+				7BBD976215AF2AD500943FC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtoZInfintieScroll;
+			productName = AtoZInfintieScroll;
+			productReference = 7BBD976415AF2AD500943FC1 /* AtoZInfintieScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BBD978815AF2B3000943FC1 /* AtoZInfiniteScrollDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BBD979E15AF2B3100943FC1 /* Build configuration list for PBXNativeTarget "AtoZInfiniteScrollDemo" */;
+			buildPhases = (
+				7BBD978515AF2B3000943FC1 /* Sources */,
+				7BBD978615AF2B3000943FC1 /* Frameworks */,
+				7BBD978715AF2B3000943FC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtoZInfiniteScrollDemo;
+			productName = AtoZInfiniteScrollDemo;
+			productReference = 7BBD978915AF2B3000943FC1 /* AtoZInfiniteScrollDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BBD975A15AF2AD500943FC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "mrgray.com, inc.";
+			};
+			buildConfigurationList = 7BBD975D15AF2AD500943FC1 /* Build configuration list for PBXProject "AtoZInfintieScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7BBD975815AF2AD500943FC1;
+			productRefGroup = 7BBD976515AF2AD500943FC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BBD976315AF2AD500943FC1 /* AtoZInfintieScroll */,
+				7BBD978815AF2B3000943FC1 /* AtoZInfiniteScrollDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BBD976215AF2AD500943FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD977215AF2AD500943FC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBD978715AF2B3000943FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD979115AF2B3000943FC1 /* InfoPlist.strings in Resources */,
+				7BBD979715AF2B3000943FC1 /* Credits.rtf in Resources */,
+				7BBD979D15AF2B3100943FC1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BBD975F15AF2AD500943FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD977615AF2AD500943FC1 /* AtoZInfintieScroll.m in Sources */,
+				7BBD97A715AF2BE500943FC1 /* AZSimpleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBD978515AF2B3000943FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBD979315AF2B3000943FC1 /* main.m in Sources */,
+				7BBD979A15AF2B3000943FC1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BBD977015AF2AD500943FC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBD977115AF2AD500943FC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BBD978F15AF2B3000943FC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBD979015AF2B3000943FC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BBD979515AF2B3000943FC1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBD979615AF2B3000943FC1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7BBD979B15AF2B3100943FC1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BBD979C15AF2B3100943FC1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BBD977715AF2AD500943FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7BBD977815AF2AD500943FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7BBD977A15AF2AD500943FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZInfintieScroll/AtoZInfintieScroll-Prefix.pch";
+				INFOPLIST_FILE = "AtoZInfintieScroll/AtoZInfintieScroll-Info.plist";
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7BBD977B15AF2AD500943FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZInfintieScroll/AtoZInfintieScroll-Prefix.pch";
+				INFOPLIST_FILE = "AtoZInfintieScroll/AtoZInfintieScroll-Info.plist";
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		7BBD979F15AF2B3100943FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZInfiniteScrollDemo/AtoZInfiniteScrollDemo-Prefix.pch";
+				INFOPLIST_FILE = "AtoZInfiniteScrollDemo/AtoZInfiniteScrollDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BBD97A015AF2B3100943FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZInfiniteScrollDemo/AtoZInfiniteScrollDemo-Prefix.pch";
+				INFOPLIST_FILE = "AtoZInfiniteScrollDemo/AtoZInfiniteScrollDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BBD975D15AF2AD500943FC1 /* Build configuration list for PBXProject "AtoZInfintieScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBD977715AF2AD500943FC1 /* Debug */,
+				7BBD977815AF2AD500943FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BBD977915AF2AD500943FC1 /* Build configuration list for PBXNativeTarget "AtoZInfintieScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBD977A15AF2AD500943FC1 /* Debug */,
+				7BBD977B15AF2AD500943FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BBD979E15AF2B3100943FC1 /* Build configuration list for PBXNativeTarget "AtoZInfiniteScrollDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBD979F15AF2B3100943FC1 /* Debug */,
+				7BBD97A015AF2B3100943FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BBD975A15AF2AD500943FC1 /* Project object */;
+}
