@@ -199,7 +199,7 @@
 	[NSThread performBlockInBackground:^{
 
 //		NSString *results = PerformMyTimeConsumingOperation(token);
-		arrayOfBlocks = [[AtoZ sharedInstance].dockSorted arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
+		arrayOfBlocks = [[AtoZ dockSorted] arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
 			AZFile *block = obj;
 			AZInfiniteCell *e = [AZInfiniteCell new];
 			e.file = block;
