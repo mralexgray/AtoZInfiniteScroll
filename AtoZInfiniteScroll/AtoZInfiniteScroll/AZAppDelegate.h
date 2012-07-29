@@ -8,14 +8,37 @@
 
 #import <Cocoa/Cocoa.h>
 #import "AZInfiniteScrollView.h"
-#import "AZSimpleView.h"
+//#import "AZSimpleView.h"
+#import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
+#import <AtoZiTunes/AtoZiTunes.h>
+#import "ANSegmentedControl.h"
 
-@interface AZAppDelegate : NSObject <NSApplicationDelegate>
+@interface AZAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate, AJSiTunesAPIDelegate>
 
-@property (retain) 			NSString			 *visiViews;
-@property (retain) 			NSString			 *viewCount;
-@property (assign) IBOutlet AZInfiniteScrollView *azScrollV;
 
--(IBAction)reZhuzhColors:(id)sender;
+@property (unsafe_unretained) IBOutlet NSProgressIndicator *pIndi;
 
+@property (weak) IBOutlet	TransparentWindow	*winwin;
+//@property (nonatomic, retain) IBOutlet ANSegmentedControl *segment;
+//@property (nonatomic, retain) IBOutlet ANSegmentedControl *segmentOrienter;
+@property (weak) IBOutlet TransparentWindow *controls;
+
+
+//@property (strong) 			NSString			 *visiViews;
+//@property (strong) 			NSString			 *viewCount;
+//@property (weak) IBOutlet AZInfiniteScrollView *azScrollV;
+//@property (nonatomic, retain) AtoZiTunes *z;
+//@property (nonatomic, retain) AJSiTunesAPI *anApi;
+
+//-(IBAction)reZhuzhColors:(id)sender;
+
+//- (void) iTunesApi:(AJSiTunesAPI *)api didCompleteWithResults:(NSArray *)results;
+
+@property (strong) IBOutlet AZInfiniteScrollView *infiniteBlocks;
+@property (weak) IBOutlet NSButton *orientButton;
+@property (weak) IBOutlet NSSlider *scaleSlider;
+@property (strong, nonatomic) NSArray *arrayOfBlocks;
+
+
+- (void) simpleHovered:(AZInfiniteCell*)sv;
 @end

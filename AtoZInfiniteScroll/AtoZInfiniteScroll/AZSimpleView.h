@@ -12,12 +12,20 @@
 @interface NSColor (AZFunColores)
 + (NSColor*) randomColor;
 @end
+#import <AtoZ/AtoZ.h>
+#import <AtoZiTunes/AtoZiTunes.h>
 
-@interface AZSimpleView : NSView
+@interface AZSimpleView : NSView //<NSWindowDelegate, AJSiTunesAPIDelegate>
 
 @property (assign) 			  BOOL 		selected;
-@property (nonatomic, retain) NSColor 	*backgroundColor;
-@property (nonatomic, retain) NSString 	*uniqueID;
-@property (nonatomic, retain) NSImage 	*image;
+@property (assign) 			  BOOL 		hovered;
+@property (assign) 			  BOOL 		hasText;
+@property (nonatomic, strong) NSColor 	*backgroundColor;
+@property (nonatomic, strong) NSString 	*uniqueID;
+@property (nonatomic, strong) NSImage 	*image;
+@property (nonatomic, strong) AZFile	*file;
+
+@property (nonatomic, strong) AJSiTunesAPI *itunesApi;
+@property (nonatomic, strong) NSArray *itunesResults;
 
 @end
