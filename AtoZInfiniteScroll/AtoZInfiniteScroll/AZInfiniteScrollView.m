@@ -124,6 +124,7 @@
 - (void)setScale:(AZInfiteScale)aScale {
 	scale = aScale;
 	[self stack];
+	
 }
 
 - (void)setOrientation:(AZOrient)anOrientation{
@@ -155,40 +156,19 @@
 //	if ( MAX(abs(event.deltaX), abs(event.deltaY)) < 10 ) return;
 //	else
 //	[self simulateScrollWithOffset:0 orEvent:event];
+	NSLog(@"offset: %f   raw event x:%f  y:%f", offset, event.deltaX, event.deltaY);
 
-//}
+	if (offset == 0) [self dealWith:event];
+
+}
 
 //- (void) simulateScrollWithOffset:(float)f orEvent:(NSEvent*)event {
 //	__block	float offset = 0;
 //	offset = f;
+-(BOOL)isOpaque { return YES; }
 
-
-	NSLog(@"offset: %f   raw event x:%f  y:%f", offset, event.deltaX, event.deltaY);
-	[_infiniteViews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-//		id simple = obj;
-		NSRect globalShift = self.unit;//  [obj frame];
-		switch (orientation) {
-			case AZOrientHorizontal:
-				offset = event.deltaX;
-				//globalShift.size.width;
-				scrollUp = (event.deltaX > 0 ? NO : YES );
-//				NSLog(@"horizontal.. scrollup: %@", StringFromBOOL(scrollUp));
-
-				globalShift.origin.x += ( scrollUp ? offset * 5 : - offset * 5);
-				break;
-			case AZOrientVertical:
-				offset = self.unit.size.height;
-				scrollUp = (event.deltaY > 0 ? NO : YES );
-				NSLog(@"vertical.. scrollup: %@", StringFromBOOL(scrollUp));
-
-				globalShift.origin.y += (scrollUp ? offset : - offset);
-				break;
-		}
-//		[self setNeedsDisplay:NO];
-		[obj setFrame:globalShift];
-		[obj setNeedsDisplay:NO];
-	}];
-
+-(void) dealWith:(NSEvent*)event{
+//	NSLog(@"offset: %f   raw event x:%f  y:%f", offset, event.deltaX, event.deltaY);
 	NSRect flexUnit = self.unit;
 	if ( scrollUp ) {
 		[_infiniteViews moveObjectAtIndex:_infiniteViews.count-1 toIndex:0];
@@ -199,20 +179,20 @@
 				[[_infiniteViews objectAtIndex:0] setFrame:flexUnit];
 				flexUnit.origin.x += flexUnit.size.width;
 				[[_infiniteViews objectAtIndex:0] setFrame:flexUnit];
-			break;
+				break;
 			case AZOrientVertical:
 				flexUnit.origin = NSZeroPoint;
 				flexUnit.origin.y -= flexUnit.size.height;
 				[[_infiniteViews objectAtIndex:0] setFrame:flexUnit];
 				flexUnit.origin.y += flexUnit.size.height;
 				[[_infiniteViews objectAtIndex:0] setFrame:flexUnit];
-			break;
+				break;
 		}
 	} else  {
-
+		
 		id c = [_infiniteViews objectAtIndex:0];
 		[_infiniteViews removeObjectAtIndex:0];
-
+		
 		switch (orientation) {
 			case AZOrientHorizontal:
 				flexUnit.origin = NSMakePoint(0, NSMaxX([self bounds]));
@@ -229,6 +209,31 @@
 				[_infiniteViews addObject:c];
 				break;
 		}
+
+	[_infiniteViews enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		NSRect globalShift = unit;
+		if (orientation == AZOrientHorizontal )
+			  globalShift.origin.x += ( event.deltaX > 0 ? unit.size.width : - unit.size.width);
+		else  globalShift.origin.y += ( event.deltaY > 0 ? unit.size.height : - unit.size.height);
+//				offset += event.deltaX;
+				//globalShift.size.width;
+//				scrollUp = (event.deltaX > 0 ? NO : YES );
+//				NSLog(@"horizontal.. scrollup: %@", StringFromBOOL(scrollUp));
+
+//				globalShift.origin.x += ( scrollUp ? unit.size.width : - unit.size.width);
+//				break;
+//			case AZOrientVertical:
+//				offset = self.unit.size.height;
+//				scrollUp = (event.deltaY > 0 ? NO : YES );
+//				NSLog(@"vertical.. scrollup: %@", StringFromBOOL(scrollUp));
+				//? offset : - offset);
+//				break;
+//		}
+//		[self setNeedsDisplay:NO];
+//		[obj setFrame:globalShift];
+		[obj setNeedsDisplay:NO];
+	}];
+
 //		moved.origin = NSMakePoint(0, NSMaxY([self frame]));
 //		[c setFrame:moved];
 //		moved.origin.y -= scooch;
@@ -236,6 +241,7 @@
 //		[_infiniteViews addObject:c];
 	}
 	[self stack];
+	offset = 0;
 }
 
 - (void) viewDidEndLiveResize {
@@ -255,8 +261,14 @@
 			pile.origin.x = idx * localunit.size.width;
 		else
 			pile.origin.y = idx * localunit.size.height;
+		[obj setNeedsDisplay:NO];
 		[obj setFrame: pile];
 	}];
+	[self setNeedsDisplay:YES];
+	
+}
+
+@end
 //	NSRect sliv =[ self frame];
 //	sliv.origin.x = sliv.size.width - 20;
 //	sliv.size.width = 20;
@@ -277,9 +289,6 @@
 //	[ctx restoreGraphicsState];
 
 //	[self reflectScrolledClipView:[self contentView]];
-	[self setNeedsDisplay:YES];
-
-}
 
 /*
 - (void) featuring: (AZSimpleView*)vv {
@@ -296,7 +305,7 @@
 	}];
 }
 */
-@end
+
 	 //- (void) selfFrameDidChange:(NSNotification*)note {
 	 //
 	 //	NSRect	docVVisRect	= [self.documentView visibleRect];

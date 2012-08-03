@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
 		<string key="IBDocument.SystemVersion">12A269</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2541</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">2549</string>
+			<string key="NS.object.0">2541</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSBox</string>
@@ -1310,7 +1310,7 @@
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<object class="NSView" key="NSWindowView" id="439893737">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSScrollView" id="825662043">
@@ -1326,12 +1326,14 @@
 											<int key="NSvFlags">274</int>
 											<string key="NSFrameSize">{482, 311}</string>
 											<reference key="NSSuperview" ref="1033306068"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="29960759"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 										</object>
 									</array>
 									<string key="NSFrameSize">{482, 311}</string>
 									<reference key="NSSuperview" ref="825662043"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="576349564"/>
 									<string key="NSReuseIdentifierKey">_NS:11</string>
 									<reference key="NSDocView" ref="576349564"/>
@@ -1351,6 +1353,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {15, 280}}</string>
 									<reference key="NSSuperview" ref="825662043"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="540696117"/>
 									<string key="NSReuseIdentifierKey">_NS:15</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -1364,6 +1367,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {482, 15}}</string>
 									<reference key="NSSuperview" ref="825662043"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="1033306068"/>
 									<string key="NSReuseIdentifierKey">_NS:26</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -1375,6 +1379,7 @@
 							</array>
 							<string key="NSFrame">{{-1, 49}, {482, 311}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="1033306068"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">153600</int>
@@ -1398,6 +1403,7 @@
 											<int key="NSvFlags">292</int>
 											<string key="NSFrame">{{18, 2}, {132, 30}}</string>
 											<reference key="NSSuperview" ref="1014500639"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="97388563"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<string key="NSAntiCompressionPriority">{250, 750}</string>
@@ -1426,6 +1432,7 @@
 											<int key="NSvFlags">292</int>
 											<string key="NSFrame">{{161, 5}, {132, 30}}</string>
 											<reference key="NSSuperview" ref="1014500639"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="124316346"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<string key="NSAntiCompressionPriority">{250, 750}</string>
@@ -1451,6 +1458,7 @@
 											<int key="NSvFlags">289</int>
 											<string key="NSFrame">{{430, 7}, {40, 32}}</string>
 											<reference key="NSSuperview" ref="1014500639"/>
+											<reference key="NSWindow"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="237630467">
@@ -1482,6 +1490,7 @@
 											<int key="NSvFlags">292</int>
 											<string key="NSFrame">{{295, 2}, {132, 30}}</string>
 											<reference key="NSSuperview" ref="1014500639"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="281142986"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<string key="NSAntiCompressionPriority">{250, 750}</string>
@@ -1501,12 +1510,14 @@
 									</array>
 									<string key="NSFrameSize">{480, 51}</string>
 									<reference key="NSSuperview" ref="1026896062"/>
+									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="787656446"/>
 									<string key="NSReuseIdentifierKey">_NS:11</string>
 								</object>
 							</array>
 							<string key="NSFrameSize">{480, 51}</string>
 							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="1014500639"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSOffsets">{0, 0}</string>
@@ -1542,6 +1553,8 @@
 						</object>
 					</array>
 					<string key="NSFrameSize">{480, 360}</string>
+					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="825662043"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1360, 746}}</string>
@@ -1711,7 +1724,6 @@
 											<string key="NSFrame">{{203, 12}, {158, 16}}</string>
 											<reference key="NSSuperview" ref="689861474"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSSliderCell" key="NSCell" id="686527525">
@@ -3985,7 +3997,7 @@
 				<string key="516.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="517.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="534.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="536.CustomClassName">AZInfiniteScrollView</string>
+				<string key="536.CustomClassName">AtoZInfinity</string>
 				<string key="536.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="537.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="538.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4007,7 +4019,7 @@
 				<boolean value="YES" key="587.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="588.CustomClassName">RoundedView</string>
 				<string key="588.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="589.CustomClassName">AZInfiniteScrollView</string>
+				<string key="589.CustomClassName">AtoZInfinity</string>
 				<string key="589.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="590.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="591.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4059,7 +4071,7 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="controls">TransparentWindow</string>
-						<string key="infiniteBlocks">AZInfiniteScrollView</string>
+						<string key="infiniteBlocks">AtoZInfinity</string>
 						<string key="orientButton">NSButton</string>
 						<string key="pIndi">NSProgressIndicator</string>
 						<string key="scaleSlider">NSSlider</string>
@@ -4073,7 +4085,7 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="infiniteBlocks">
 							<string key="name">infiniteBlocks</string>
-							<string key="candidateClassName">AZInfiniteScrollView</string>
+							<string key="candidateClassName">AtoZInfinity</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="orientButton">
 							<string key="name">orientButton</string>
@@ -4102,11 +4114,11 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">AZInfiniteScrollView</string>
+					<string key="className">AtoZInfinity</string>
 					<string key="superclassName">NSScrollView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/AZInfiniteScrollView.h</string>
+						<string key="minorKey">./Classes/AtoZInfinity.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

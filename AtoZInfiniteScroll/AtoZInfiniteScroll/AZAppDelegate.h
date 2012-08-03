@@ -7,7 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "AZInfiniteScrollView.h"
+#import <AtoZ/AtoZ.h>
+
+//#import "AZInfiniteScrollView.h"
 //#import "AZSimpleView.h"
 #import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
 #import <AtoZiTunes/AtoZiTunes.h>
@@ -16,12 +18,10 @@
 @interface AZAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate, AJSiTunesAPIDelegate>
 
 
-@property (unsafe_unretained) IBOutlet NSProgressIndicator *pIndi;
 
 @property (weak) IBOutlet	TransparentWindow	*winwin;
 //@property (nonatomic, retain) IBOutlet ANSegmentedControl *segment;
 //@property (nonatomic, retain) IBOutlet ANSegmentedControl *segmentOrienter;
-@property (weak) IBOutlet TransparentWindow *controls;
 
 
 //@property (strong) 			NSString			 *visiViews;
@@ -34,7 +34,9 @@
 
 //- (void) iTunesApi:(AJSiTunesAPI *)api didCompleteWithResults:(NSArray *)results;
 
-@property (strong) IBOutlet AZInfiniteScrollView *infiniteBlocks;
+@property (unsafe_unretained) IBOutlet NSProgressIndicator *pIndi;
+@property (weak) IBOutlet TransparentWindow *controls;
+@property (strong) IBOutlet AtoZInfinity *infiniteBlocks;
 @property (weak) IBOutlet NSButton *orientButton;
 @property (weak) IBOutlet NSSlider *scaleSlider;
 @property (strong, nonatomic) NSArray *arrayOfBlocks;

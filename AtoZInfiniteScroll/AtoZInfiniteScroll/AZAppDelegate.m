@@ -8,7 +8,6 @@
 
 #import "AZAppDelegate.h"
 //s#import "AZInfiniteCell.h"
-#import <AtoZ/AtoZ.h>
 
 @implementation AZAppDelegate  			{ NSMutableArray *arrayOfViews;
 										  TransparentWindow *cs;	}
@@ -54,19 +53,19 @@
 //			[winwin setAlphaValue:0];
 //			NSRect win = AZMakeRectMaxXUnderMenuBarY(200);
 			// ([[NSScreen mainScreen]frame].size.width, 200);
-	if (infiniteBlocks.orientation == AZOrientVertical ) {
-			[winwin setFrame:AZMakeRectMaxXUnderMenuBarY(100) display:YES animate:YES];//  display:NO];// animate:YES];
+	if (infiniteBlocks.orientation == AZOrientLeft ) {
+			[winwin setFrame:AZMakeRectMaxXUnderMenuBarY(50) display:YES animate:YES];//  display:NO];// animate:YES];
 //			[winwin slideDown];
-			[infiniteBlocks setOrientation: AZOrientHorizontal];
+			[infiniteBlocks setOrientation: AZOrientTop];
 
 			} else {
-			[winwin setFrame:NSMakeRect(0,0, 100, [[NSScreen mainScreen]frame].size.height-22)  display:YES animate:YES];
+			[winwin setFrame:NSMakeRect(0,0, 50, [[NSScreen mainScreen]frame].size.height-22)  display:YES animate:YES];
 
 //			[controls rotateByAngle:-90];
 //			[[winwin contentView]  setNeedsDisplay:YES];
 //			NSRect x = AZRightEdge([winwin frame], [controls frame].size.width);
 //			[controls setFrame:x];
-			[infiniteBlocks setOrientation : AZOrientVertical];
+			[infiniteBlocks setOrientation : AZOrientLeft];
 
 			}
 //		}
@@ -75,21 +74,10 @@
 	//simulateScrollWithOffset:0 orEvent:nil];
 }
 
-- (IBAction) peruseApps:(id)sender {
-
-	self.arrayOfBlocks = [[AtoZ appFolderSorted] arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
-		AZFile *block = obj;
-		AZInfiniteCell *e = [AZInfiniteCell new];
-		e.file = block;
-		e.backgroundColor = block.color;
-		return e;
-	}];
-	infiniteBlocks.infiniteViews  = arrayOfBlocks;
-
-}
 
 - (void) simpleHovered:(AZInfiniteCell*)sv {
-	NSLog(@"jovered: %@", sv.file.name);
+//	NSLog(@"jovered: %@", sv.file.name);
+//	this does work.. you can react to hover events on iondividual boxes here
 }
 
 
@@ -116,6 +104,7 @@
 //	[winwin setDelegate:self];
 //	[winwin setDefaultFirstResponder];
 	[NSApp setDelegate:self];
+	[self swapOrient:@0];
 	[NSApp activateIgnoringOtherApps:YES];
 	//	[winwin setMaxSize:NSMakeSize(NSIntegerMax, 150)];
 	//	[winwin setFrame:AZUpperEdge([[NSScreen mainScreen]frame], 200) display:NO animate:NO];
@@ -186,6 +175,26 @@
 //	infiniteBlocks.horizontalLineScroll = 200;
 //}
 
+
+- (IBAction) peruseApps:(id)sender {
+	[pIndi startAnimation:pIndi];
+	[NSThread performBlockInBackground:^{
+		
+		arrayOfBlocks = [[AtoZ appFolderSorted] arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
+			AZFile *block = obj;
+			AZInfiniteCell *e = [AZInfiniteCell new];
+			e.file = block;
+			e.backgroundColor = block.color;
+			return e;
+		}];
+		infiniteBlocks.infiniteViews  = arrayOfBlocks;
+		[[NSThread mainThread] performBlock:^{
+			[infiniteBlocks setInfiniteViews:arrayOfBlocks];
+			[pIndi stopAnimation:pIndi];
+		}];
+	}];
+}
+
 -(void) applicationDidFinishLaunching:(NSNotification *)notification {
 	// where you would set up a delegate (e.g. [Singleton instance].delegate = self)
 //	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dockIsSorted) name:AtoZDockSortedUpdated object:nil];///[AtoZ sharedInstance]];
@@ -202,6 +211,11 @@
 		arrayOfBlocks = [[AtoZ dockSorted] arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
 			AZFile *block = obj;
 			AZInfiniteCell *e = [AZInfiniteCell new];
+//			AZSimpleView *e = [AZSimpleView new];
+//			AZBox *e = [[AZBox alloc]init];
+
+//			[e setCanDrawConcurrently:YES];
+//			e.representedObject = block;
 			e.file = block;
 			e.backgroundColor = block.color;
 			return e;

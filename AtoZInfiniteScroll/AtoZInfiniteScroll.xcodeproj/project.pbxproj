@@ -22,7 +22,6 @@
 		7BBD98AA15AF7EB800943FC1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98A815AF7EB800943FC1 /* Credits.rtf */; };
 		7BBD98AD15AF7EB800943FC1 /* AZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD98AC15AF7EB800943FC1 /* AZAppDelegate.m */; };
 		7BBD98B015AF7EB800943FC1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98AE15AF7EB800943FC1 /* MainMenu.xib */; };
-		7BBD98D715AF804300943FC1 /* AZInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD98D615AF804200943FC1 /* AZInfiniteScrollView.m */; };
 		7BBD98DD15AF9D5200943FC1 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98D815AF9D5100943FC1 /* 1.pdf */; };
 		7BBD98DE15AF9D5200943FC1 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98D915AF9D5200943FC1 /* 2.pdf */; };
 		7BBD98DF15AF9D5200943FC1 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98DA15AF9D5200943FC1 /* 3.pdf */; };
@@ -389,7 +388,6 @@
 			files = (
 				7BBD98A615AF7EB800943FC1 /* main.m in Sources */,
 				7BBD98AD15AF7EB800943FC1 /* AZAppDelegate.m in Sources */,
-				7BBD98D715AF804300943FC1 /* AZInfiniteScrollView.m in Sources */,
 				7B385DE415C384B700A28686 /* ANSegmentedCell.m in Sources */,
 				7B385DE515C384B700A28686 /* ANSegmentedControl.m in Sources */,
 				7B385DE615C384B800A28686 /* NSBezierPath+MCAdditions.m in Sources */,
