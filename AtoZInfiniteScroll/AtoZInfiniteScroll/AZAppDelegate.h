@@ -11,8 +11,8 @@
 
 //#import "AZInfiniteScrollView.h"
 //#import "AZSimpleView.h"
-#import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
-#import <AtoZiTunes/AtoZiTunes.h>
+//#import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
+//#import <AtoZiTunes/AtoZiTunes.h>
 #import "ANSegmentedControl.h"
 
 @interface AZAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate, AJSiTunesAPIDelegate>

@@ -12,9 +12,9 @@
 @interface NSColor (AZFunColores)
 + (NSColor*) randomColor;
 @end
-#import <AtoZ/AtoZ.h>
-#import <AtoZiTunes/AtoZiTunes.h>
-
+//#import <AtoZ/AtoZ.h>
+//#import <AtoZiTunes/AtoZiTunes.h>
+@class AJSiTunesAPI;
 @interface AZSimpleView : NSView //<NSWindowDelegate, AJSiTunesAPIDelegate>
 
 @property (assign) 			  BOOL 		selected;
