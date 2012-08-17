@@ -36,8 +36,11 @@
 {
     int x = start + progress * range;
     [super setCurrentProgress:progress];
-    [delegate performSelector:@selector(setPosition:) 
+/*	if (
+		[delegate respondsToSelector:@selector(setPosition:)]){
+ 		   [delegate performSelector:@selector(setPosition:)
                    withObject:[NSNumber numberWithInteger:x]];
+		}*/
 }
 
 - (void)setDelegate:(id)d
