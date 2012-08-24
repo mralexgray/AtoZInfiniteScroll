@@ -14,7 +14,7 @@
 - (void) awakeFromNib	{
 
 	_controlWindow.level = NSScreenSaverWindowLevel;
-	[_controlWindow setFrame: AZMakeRectMaxXUnderMenuBarY(40)];
+	[_controlWindow setFrame: AZMakeRectMaxXUnderMenuBarY(40) display:YES];
 
 	////	AZMakeRect(NSMakePoint(
 	////					ScreenWidess() - [_controlWindow frame].size.width,
@@ -59,4 +59,26 @@
 
 - (IBAction)swapOrient:(id)sender {
 }
+
+- (IBAction) peruseApps:(id)sender {
+//	[_spinner startAnimation:pIndi];
+	[NSThread performBlockInBackground:^{
+
+//		_arrayOfBlocks =
+//	[self setInfi:[AtoZ dockSorted]];
+//		 [arrayUsingIndexedBlock:^id(id obj, NSUInteger idx) {
+//			AZFile *block = obj;
+//			AZInfiniteCell *e = [AZInfiniteCell new];
+//			e.file = block;
+//			e.backgroundColor = block.color;
+//			return e;
+//		}];
+//		_infiniteBlocks.infiniteViews  = arrayOfBlocks;
+//		[[NSThread mainThread] performBlock:^{
+//			[_infiniteBlocks setInfiniteViews:arrayOfBlocks];
+//			[_spinner stopAnimation:pIndi];
+//		}];
+	}];
+}
+
 @end
