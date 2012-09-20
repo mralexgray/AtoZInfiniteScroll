@@ -13,14 +13,16 @@
 
 - (void) awakeFromNib	{
 
-	_controlWindow.level = NSScreenSaverWindowLevel;
-	[_controlWindow setFrame: AZMakeRectMaxXUnderMenuBarY(40) display:YES];
+//	_controlWindow.level = NSScreenSaverWindowLevel;
+	[_controlWindow setOrientation:AZOrientTop];
+	[_controlWindow slideIn];
+//	[_controlWindow setFrame: AZMakeRectMaxXUnderMenuBarY(40) display:YES];
 
 	////	AZMakeRect(NSMakePoint(
 	////					ScreenWidess() - [_controlWindow frame].size.width,
 	////					ScreenHighness() - 22 - [_controlWindow frame].size.height),
 	////					[_controlWindow frame].size ) display:NO];
-	[_controlWindow slideDown];
+//	[_controlWindow slideDown];
 	[_spinner startAnimation:_spinner];
 	[_scaleSlider setAction:@selector(switchViewScale:)];
 	[_orientButton setAction:@selector(swapOrient:)];

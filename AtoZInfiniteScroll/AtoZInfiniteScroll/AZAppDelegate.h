@@ -7,18 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
+//#import <PLWeakCompatibility/PLWeakCompatibilityStubs.h>
 #import <AtoZ/AtoZ.h>
 //#import "ANSegmentedControl.h"
 
 
 @interface AZAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
-@property (weak) IBOutlet TransparentWindow		*barWindow;
-@property (weak) IBOutlet TransparentWindow 	*controlWindow;
+@property (weak) IBOutlet AZTrackingWindow		*barWindow;
+@property (weak) IBOutlet AZTrackingWindow 		*controlWindow;
 @property (weak) IBOutlet AtoZInfinity 			*infiniteBlocks;
-@property (assign) IBOutlet NSProgressIndicator 	*spinner;
-@property (assign) IBOutlet NSButton 				*orientButton;
-@property (assign) IBOutlet NSSlider 				*scaleSlider;
+@property (weak) IBOutlet NSProgressIndicator 	*spinner;
+@property (weak) IBOutlet NSButton 				*orientButton;
+@property (weak) IBOutlet NSSlider 				*scaleSlider;
 
 - (void) simpleHovered:(AZInfiniteCell*)sv;
 @end

@@ -25,7 +25,6 @@
 		7BBD98DF15AF9D5200943FC1 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98DA15AF9D5200943FC1 /* 3.pdf */; };
 		7BBD98E015AF9D5200943FC1 /* 4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98DB15AF9D5200943FC1 /* 4.pdf */; };
 		7BBD98E115AF9D5200943FC1 /* 5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD98DC15AF9D5200943FC1 /* 5.pdf */; };
-		7BFB3DD315D18E0D0095D79B /* PLWeakCompatibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B64C02315D17F2A00D4ED4A /* PLWeakCompatibility.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +49,6 @@
 		7B385DE215C384B700A28686 /* NSShadow+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSShadow+MCAdditions.h"; sourceTree = "<group>"; };
 		7B385DE315C384B700A28686 /* NSShadow+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSShadow+MCAdditions.m"; sourceTree = "<group>"; };
 		7B542D6315C24FD00053295C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7B64C02315D17F2A00D4ED4A /* PLWeakCompatibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLWeakCompatibility.framework; path = "../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug/PLWeakCompatibility.framework"; sourceTree = "<group>"; };
 		7B6A1A5F15E707B40028D3E1 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Users/localadmin/Library/Developer/Xcode/DerivedData/Build/Products/Debug/AtoZ.framework; sourceTree = "<group>"; };
 		7B7C008C15D186280093CF6B /* scratch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch; sourceTree = "<group>"; };
 		7B96423915C14302001A0B0F /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = "../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug/AtoZ.framework"; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6A1A6015E707B40028D3E1 /* AtoZ.framework in Frameworks */,
-				7BFB3DD315D18E0D0095D79B /* PLWeakCompatibility.framework in Frameworks */,
 				7B542D6415C24FD00053295C /* QuartzCore.framework in Frameworks */,
 				7BBD989A15AF7EB800943FC1 /* Cocoa.framework in Frameworks */,
 			);
@@ -114,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				7B6A1A5F15E707B40028D3E1 /* AtoZ.framework */,
-				7B64C02315D17F2A00D4ED4A /* PLWeakCompatibility.framework */,
 				7B385DDB15C384B700A28686 /* ANSegmentedControl */,
 				7BBD989F15AF7EB800943FC1 /* AtoZInfiniteScroll */,
 				7BBD989815AF7EB800943FC1 /* Frameworks */,
