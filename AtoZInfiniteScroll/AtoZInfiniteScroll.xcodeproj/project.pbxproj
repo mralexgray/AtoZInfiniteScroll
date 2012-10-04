@@ -52,7 +52,6 @@
 		7B6A1A5F15E707B40028D3E1 /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = ../../../../../Users/localadmin/Library/Developer/Xcode/DerivedData/Build/Products/Debug/AtoZ.framework; sourceTree = "<group>"; };
 		7B7C008C15D186280093CF6B /* scratch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch; sourceTree = "<group>"; };
 		7B96423915C14302001A0B0F /* AtoZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZ.framework; path = "../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug/AtoZ.framework"; sourceTree = "<group>"; };
-		7B96424515C15AF9001A0B0F /* PLWeakCompatibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLWeakCompatibility.framework; path = "/Volumes/2T/ServiceData/AtoZ.framework/AtoZ/../../../../disenchanted 750/DerivedData/PLWeakCompatibility-chfkqnybfsbbfpfbkrdmefgadcvh/Build/Products/Debug/PLWeakCompatibility.framework"; sourceTree = "<absolute>"; };
 		7BA6A40015C2A0AB005503DF /* AtoZiTunes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtoZiTunes.framework; path = "../../../../disenchanted 750/DerivedData/AtoZ-hfqteqfcvjfinlajqwkydsqyzpiz/Build/Products/Debug/AtoZiTunes.framework"; sourceTree = "<group>"; };
 		7BBD989515AF7EB800943FC1 /* AtoZInfiniteScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtoZInfiniteScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BBD989915AF7EB800943FC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -131,7 +130,6 @@
 			children = (
 				7BA6A40015C2A0AB005503DF /* AtoZiTunes.framework */,
 				7B542D6315C24FD00053295C /* QuartzCore.framework */,
-				7B96424515C15AF9001A0B0F /* PLWeakCompatibility.framework */,
 				7B96423915C14302001A0B0F /* AtoZ.framework */,
 				7BBD989915AF7EB800943FC1 /* Cocoa.framework */,
 				7BBD989B15AF7EB800943FC1 /* Other Frameworks */,
