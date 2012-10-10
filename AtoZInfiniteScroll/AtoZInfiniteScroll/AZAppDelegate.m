@@ -14,7 +14,7 @@
 - (void) awakeFromNib	{
 
 //	_controlWindow.level = NSScreenSaverWindowLevel;
-	[_controlWindow setOrientation:AZOrientTop];
+	_controlWindow.position =  AZOrientTop;
 	[_controlWindow slideIn];
 //	[_controlWindow setFrame: AZMakeRectMaxXUnderMenuBarY(40) display:YES];
 
